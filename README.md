@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](/images/Desktop.png)
+![Desktop Screenshot](/images/desktop.png)
+![Mobile Screenshot](/images/mobile.png)
 
 
 
@@ -75,5 +76,5 @@ I learned that you can use the margin: 0 auto; application to center a div on th
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Cpuening84169482](https://www.frontendmentor.io/profile/Cpuening84169482)
 
