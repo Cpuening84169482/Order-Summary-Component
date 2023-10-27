@@ -1,0 +1,188 @@
+/*CSS for the body tag*/
+body{
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5% 5% 5% 5%;
+
+}
+
+p{
+    font-size: 16px;
+}
+
+/*To add in the pattern on top of the body's background color*/
+body.pattern{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+/*For the container*/
+.grid-container{
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas: 
+        'header header header header header header'
+        'main main main main main main';
+
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    width: 25%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+/*For the image in the header container*/
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px 25px 0px 0px;
+}
+
+/*For the div containing the image*/
+.grid-item1{
+    grid-area: header;
+}
+
+/*For changing the text color and font weight of the annual plan text*/
+.dark{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    padding: 2%;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/*To allow for proper positioning for the Order Summary text*/
+.dark2{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+/*For te div containing the main content*/
+.grid-item2{
+    grid-area: main;
+    padding: 5%;
+}
+
+/*For changing the color and line height of the main text block*/
+.description{
+    color: hsl(224, 23%, 55%);
+    line-height: 1.6;
+}
+
+/*For the div containing the annual plan content*/
+.plan{
+    background-color: hsla(245, 75%, 52%, 0.02);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    line-height: 1.6;
+}
+
+/*For changing the position of the music note svg*/
+.music-img{
+    padding: 8%;
+}
+
+/*For changing the color of the amount per year number*/
+.per-year{
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+.change{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: auto;
+    width:  auto;
+}
+
+/*For the change button in the annual plan content zone*/
+u{
+    text-align: right;
+    color: hsl(245, 75%, 52%);
+    float: right;
+}
+
+u:hover{
+    color: hsla(245, 75%, 52%, 0.7);
+}
+
+/*For the proceed to purchase button*/
+.proceed{
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 10px;
+    padding: 5%;
+    color: white;
+    font-weight: 700;
+    margin: 5%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.proceed:hover{
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+/*For the cancel order button*/
+.cancel{
+    border: none;
+    background-color: hsl(225, 100%, 98%);
+    color :hsl(224, 23%, 55%);
+    margin: 5%;
+    font-weight: 700;
+}
+
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+/*For mobile layout*/
+@media(max-width: 800px)
+{
+    body.pattern{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-size: 100%;
+    }
+
+    .grid-container
+    {
+        display: grid;
+        margin: 0 auto;
+        grid-template-areas: 
+            'header'
+            'main';
+        
+        background-color:  hsl(225, 100%, 98%);
+        border-radius: 25px;
+        text-align: center;
+        width: 75%;
+        height: 80%;
+    }
+
+    .grid-item1{ 
+        grid-area: header; 
+        border-radius: 25px 25px 0px 0px;
+        height: 100%;
+        align-self: center;
+    }
+    .grid-item2{ 
+        grid-area: main;
+        border-radius: 0px 0px 25px 25px;
+        padding: 8%;
+        align-self: center;
+
+    }
+
+}
